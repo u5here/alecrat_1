@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>H4CKED BY ALECRAT</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#080808;display:flex;justify-content:center;align-items:center;min-height:100vh}
+.root{background:#080808;font-family:'Share Tech Mono',monospace;position:relative;overflow:hidden;width:380px}
+.flag{display:flex;flex-direction:column;width:100%;height:18px}
+.flag-r{background:#c60b1e;flex:1}
+.flag-y{background:#ffc400;flex:2}
+.flag-r2{background:#c60b1e;flex:1}
+.body{padding:28px 20px 24px}
+.corner-tl,.corner-tr,.corner-bl,.corner-br{position:absolute;width:16px;height:16px;border-color:#c60b1e;border-style:solid;opacity:0.6}
+.corner-tl{top:22px;left:8px;border-width:2px 0 0 2px}
+.corner-tr{top:22px;right:8px;border-width:2px 2px 0 0}
+.corner-bl{bottom:8px;left:8px;border-width:0 0 2px 2px}
+.corner-br{bottom:8px;right:8px;border-width:0 2px 2px 0}
+.scan{position:absolute;top:0;left:0;width:100%;height:100%;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(198,11,30,0.02) 3px,rgba(198,11,30,0.02) 4px);pointer-events:none}
+.header-label{text-align:center;font-size:10px;letter-spacing:4px;color:#c60b1e;opacity:0.5;margin-bottom:22px;text-transform:uppercase}
+.h4cked{font-family:'Orbitron',monospace;font-size:13px;font-weight:700;letter-spacing:4px;color:#555;text-transform:uppercase;text-align:center;margin-bottom:8px}
+.alias{font-family:'Orbitron',monospace;font-size:36px;font-weight:900;color:#fff;letter-spacing:4px;text-align:center;text-shadow:0 0 6px rgba(198,11,30,0.4)}
+.crew-line{text-align:center;font-size:10px;letter-spacing:5px;color:#444;margin-top:6px;text-transform:uppercase}
+.sep{height:1px;background:#1a1a1a;margin:22px 0;position:relative}
+.sep::after{content:'';position:absolute;left:50%;top:-1px;transform:translateX(-50%);width:40px;height:2px;background:#c60b1e}
+.rows{display:flex;flex-direction:column;gap:1px}
+.row{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-bottom:1px solid #111}
+.row:last-child{border-bottom:none}
+.row-key{font-size:10px;letter-spacing:3px;color:#333;text-transform:uppercase}
+.row-val{font-size:13px;color:#eee;font-weight:bold;letter-spacing:1px}
+.row-val.accent{color:#c60b1e}
+.row-val.gold{color:#ffc400}
+.blink{animation:bl 1s step-end infinite}
+@keyframes bl{50%{opacity:0}}
+.msg{margin-top:22px;padding:14px;border:1px solid #1a1a1a;border-left:2px solid #c60b1e;background:#0d0000}
+.msg-tag{font-size:9px;letter-spacing:3px;color:#c60b1e;opacity:0.5;margin-bottom:8px;text-transform:uppercase}
+.msg-body{font-size:12px;color:#666;line-height:1.8}
+.msg-sign{font-size:12px;color:#ffc400;margin-top:10px}
+.term{margin-top:16px;padding:8px 12px;background:#030303;border-radius:4px;border:1px solid #111}
+.term-txt{font-size:11px;color:#333}
+.term-txt .r{color:#c60b1e}
+.cur{display:inline-block;width:7px;height:11px;background:#c60b1e;vertical-align:middle;margin-left:2px;animation:bl 0.7s step-end infinite}
+.flag-bottom{display:flex;flex-direction:column;width:100%;height:18px;margin-top:24px}
+</style>
+</head>
+<body>
+<div class="root">
+  <div class="flag"><div class="flag-r"></div><div class="flag-y"></div><div class="flag-r2"></div></div>
+  <div class="scan"></div>
+  <div class="corner-tl"></div><div class="corner-tr"></div>
+  <div class="corner-bl"></div><div class="corner-br"></div>
+  <div class="body">
+    <div class="header-label">sistema comprometido</div>
+    <div class="h4cked">H4CKED BY</div>
+    <div class="alias">ALECRAT</div>
+    <div class="crew-line">OsxCommunity &nbsp;·&nbsp; Est. 2024</div>
+    <div class="sep"></div>
+    <div class="rows">
+      <div class="row"><span class="row-key">Hacker</span><span class="row-val gold">Alecrat</span></div>
+      <div class="row"><span class="row-key">Crew</span><span class="row-val">OsxCommunity</span></div>
+      <div class="row"><span class="row-key">Status</span><span class="row-val accent blink">OWNED</span></div>
+      <div class="row"><span class="row-key">Nivel</span><span class="row-val gold">Ghost Operator</span></div>
+    </div>
+    <div class="msg">
+      <div class="msg-tag">// mensaje</div>
+      <div class="msg-body">Tu sistema ha sido comprometido.<br>Ningún dato está a salvo.<br>Ningún muro es suficientemente alto.</div>
+      <div class="msg-sign">— Alecrat</div>
+    </div>
+    <div class="term">
+      <div class="term-txt"><span class="r">root@osxcommunity</span>:~$ access granted<div class="cur"></div></div>
+    </div>
+  </div>
+  <div class="flag-bottom"><div class="flag-r"></div><div class="flag-y"></div><div class="flag-r2"></div></div>
+</div>
+</body>
+</html>
